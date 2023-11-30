@@ -1,7 +1,7 @@
 import css from './PhonebookForm.module.css';
 import { useState } from 'react';
 
-const PhonebookForm = ({ addContacts }) => {
+export const PhonebookForm = ({ addContacts }) => {
   const [value, setValue] = useState({
     name: '',
     number: '',
@@ -53,5 +53,3 @@ const PhonebookForm = ({ addContacts }) => {
     </form>
   );
 };
-
-export default PhonebookForm;
